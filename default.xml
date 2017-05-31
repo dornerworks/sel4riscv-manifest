@@ -17,6 +17,10 @@
      copying this manifest as a template then you probably want the fetch path
      for this to be '../seL4' instead of '.' -->
 <remote name="heshamelmatary"
+fetch="https://github.com/heshamelmatary"
+/>
+
+<remote name="dw"
 fetch="."
 />
 
@@ -24,7 +28,7 @@ fetch="."
 remote="heshamelmatary"
 />
 
-<project name="seL4-riscv-mk.git" path="kernel"/>
+<project name="seL4-riscv-mk.git" path="kernel" remote="dw" revision="july_2015_riscv_rocket"/>
 <project name="common-tool.git" path="tools/common"/>
 <project name="kbuild-tool.git" path="tools/kbuild"/>
 <project name="elfloader-tool.git" path="tools/elfloader"/>
